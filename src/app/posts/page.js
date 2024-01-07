@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./Posts.module.css";
 
 const PostPage = async () => {
   const res = await fetch("https://sky-mart-server-eight.vercel.app/products", {
@@ -8,10 +9,10 @@ const PostPage = async () => {
     },
   });
   const data = await res.json();
-  console.log(data);
+  // console.log(data);
   return (
     <div>
-      <h1 className=" text-6xl text-center py-10">This is the post route</h1>
+      <h1 className={styles.header_text}>This is the post route</h1>
       <div className=" grid grid-cols-3 gap-8 px-20">
         {data?.map((product) => (
           <div key={product._id} className="card w-96 bg-base-100 shadow-xl">
