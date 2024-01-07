@@ -1,12 +1,23 @@
 import Image from "next/image";
 import React from "react";
+export async function generateStaticParams() {
+  const res = await fetch("https://sky-mart-server-eight.vercel.app/products");
+  const posts = await res.json();
+  const ids = posts.slice(0, 3).map((post) => {
+    return {
+      id: post._id,
+    };
+  });
+  //   console.log(ids);
 
+  return ids;
+}
 const DetailsPage = async ({ params }) => {
   const res = await fetch(
     `https://sky-mart-server-eight.vercel.app/products/${params.id}`
   );
   const details = await res.json();
-  console.log(details);
+  //   console.log(details);
   return (
     <div>
       <div className="card w-full bg-base-100 shadow-xl">
