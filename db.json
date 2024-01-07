@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Introduction to JSON",
+      "description": "Learn the basics of JSON (JavaScript Object Notation) and its use in data interchange.",
+      "like_count": 150
+    },
+    {
+      "id": 2,
+      "title": "Python Programming Fundamentals",
+      "description": "Explore the core concepts of Python programming language for beginners.",
+      "like_count": 230
+    },
+    {
+      "id": 3,
+      "title": "Web Development with HTML and CSS",
+      "description": "Create responsive and visually appealing websites using HTML and CSS.",
+      "like_count": 180
+    },
+    {
+      "id": 4,
+      "title": "Machine Learning Basics",
+      "description": "An introduction to machine learning algorithms and their applications.",
+      "like_count": 320
+    },
+    {
+      "id": 5,
+      "title": "Mobile App Development with React Native",
+      "description": "Build cross-platform mobile applications using React Native framework.",
+      "like_count": 270
+    },
+    {
+      "id": 6,
+      "title": "Data Science and Big Data Analytics",
+      "description": "Explore the world of data science and big data analytics for extracting valuable insights.",
+      "like_count": 200
+    }
+  ]
+}
